@@ -55,11 +55,13 @@ RedNotesMate/
 
 1. **从AionUi源码复制文件**
    - 源码路径：`/Users/xueyuheng/research/AionUi`
+   - 源码GIT仓库: `https://github.com/AndersHsueh/AionUi.git`
    - 复制到项目目录：`RedNotesMate/aionui/`
    - 保留原有的package.json、src目录等
 
 2. **集成xiaohongshu-mcp功能**
    - 源码路径：`/Users/xueyuheng/workspace/xiaohongshu-mcp`
+   - 源码路径: `https://github.com/AndersHsueh/xiaohongshu-mcp.git`
    - 需要编译Go程序并放置到相应平台目录
 
 3. **安装依赖**
