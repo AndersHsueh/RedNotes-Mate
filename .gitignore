@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+aionui/node_modules/
+
+# Build outputs
+dist/
+aionui/dist/
+aionui/release/
+aionui/out/
+
+# Git submodules
+aionui/.git/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.npm/
+
+# Temporary files
+*.tmp
+*.temp
