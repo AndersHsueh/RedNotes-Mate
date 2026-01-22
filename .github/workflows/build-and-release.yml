@@ -120,7 +120,7 @@ jobs:
         if: matrix.platform == 'windows-arm64'
         shell: pwsh
         run: |
-          choco install visualstudio2022buildtools --yes --params "'--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 --add Microsoft.VisualStudio.Component.Windows11SDK.22000 --includeRecommended --includeOptional'"
+          choco install visualstudio2022buildtools --yes --params "'--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 --add Microsoft.VisualStudio.Component.Windows11SDK.22000'"
 
       - name: Setup Windows build environment (for Windows only)
         if: startsWith(matrix.platform, 'windows')
@@ -451,8 +451,7 @@ jobs:
                 git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
                 git push origin $BRANCH_NAME
 
-                COMMIT_SHORT=$(git rev-parse --short HEAD)
-                TAG_NAME="v${NEW_VERSION}-${COMMIT_SHORT}"
+                TAG_NAME="v${NEW_VERSION}"
 
                 echo "New tag with updated version: $TAG_NAME"
                 echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT

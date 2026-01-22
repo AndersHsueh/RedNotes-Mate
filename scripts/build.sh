@@ -162,8 +162,8 @@ main() {
             build_linux
             ;;
         all)
-            print_warn "Building for all platforms is typically done in CI/CD."
-            print_warn "For local builds, consider building for your current platform."
+            print_warn "Cross-compilation is not supported. Building for current platform only."
+            print_warn "Use CI/CD workflow for multi-platform builds."
             build_current
             ;;
         help|--help|-h)
